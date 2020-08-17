@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataComponentBase
+public class EntityComponentBase
 {
     private EntityBase _entity;
     public EntityBase entity;

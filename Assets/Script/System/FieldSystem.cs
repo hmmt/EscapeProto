@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FieldSystem : SystemBase
 {
-
     //  무언가 맵에 관한 변수
 
     public void MoveUnitHorizontal(EntityBase entity, float x)

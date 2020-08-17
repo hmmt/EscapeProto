@@ -40,7 +40,7 @@ public class GameRoot : MonoBehaviour
     private void CreateUnit()
     {
         var c = GetSystem<UnitSystem>().CreateCharacter();
-        GetSystem<GameInputSystem>().RegisterInputTUnit(c);
+        GetSystem<GameInputSystem>().RegisterInputUnit(c);
     }
 
     private void Update()

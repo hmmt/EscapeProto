@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class GameInputSystem : SystemBase
 {
-    private static GameInputSystem _instnace;
-    public static GameInputSystem instance => _instnace;
-
     private EntityBase _targetUnit;
 
 
@@ -32,7 +29,7 @@ public class GameInputSystem : SystemBase
     /// 입력을 받을 유닛을 지정합니다.
     /// </summary>
     /// <param name="unit"></param>
-    public void RegisterInputTUnit(EntityBase unit)
+    public void RegisterInputUnit(EntityBase unit)
     {
         _targetUnit = unit;
     }

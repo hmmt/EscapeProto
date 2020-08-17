@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MapInfoRoot>
+  <MapInfo id="1" width="10">
+    <!-- 로케이션들-->
+    <Location id="1">
+      <Rect left="9" right="10" />
+    </Location>
+    
+    <!-- 트리거들 -->
+    <Trigger>
+      <Condition>
+        <Type>Bring</Type>
+        <Param id="1">1</Param> <!-- 로케이션 아이디-->
+      </Condition>
+      <Action>
+        <Type>TeleportToMap</Type> <!-- 다른 맵으로 순간이동 -->
+        <Param id="1">2</Param> <!-- 이동할 맵 아이디-->
+        <Param id="2">1</Param> <!-- 맵의 로케이션 아이디 -->
+      </Action>
+    </Trigger>
+    
+    <!-- 맵 오브젝트들 -->
+    <Object x="0" y="0">Background</Object>
+    <Object x="1" y="0">Tree</Object>
+  </MapInfo>
+</MapInfoRoot>

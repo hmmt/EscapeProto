@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class EntityBase
 {
-    private List<DataComponentBase> _componets = new List<DataComponentBase>();
+    private List<EntityComponentBase> _componets = new List<EntityComponentBase>();
 
     public virtual void Initialize()
     {
 
     }
 
-    public T AddDataComponent<T>() where T : DataComponentBase
+    public T AddDataComponent<T>() where T : EntityComponentBase
     {
         var found = _componets.Find(x => x is T);
         if (found != null)
@@ -23,7 +23,7 @@ public class EntityBase
         return result;
     }
 
-    public T GetDataComponent<T>() where T : DataComponentBase
+    public T GetDataComponent<T>() where T : EntityComponentBase
     {
         return _componets.Find(x => x is T) as T;
     }
